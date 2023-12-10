@@ -202,3 +202,68 @@ header .links ul li a:hover{
     color: #777;
     font-size: 16px;
 }
+
+.section-head {
+    text-align: center;
+    margin: 0;
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -5px;
+    color: #ebeced;
+}
+.section-head + p {
+    text-align: center;
+    margin: -30px 0 0;
+    letter-spacing: 2px;
+    color: #7e7e7e;
+}
+
+@media (max-width: 767px) {
+    .section-head {
+        font-size: 60px;
+    }
+    .section-head + p {
+        margin: -20px 0 0;
+    }
+}
+
+.services {
+    padding: 60px 0;
+}
+
+.services .services-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.services .services-items .item-card {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .services .services-items .item-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.services .services-items .item-card i {
+    color: var(--main-color);
+    font-size: 24px;
+    padding-right: 20px;
+}
+.services .services-items .item-card .text {
+    flex: 1;
+}
+.services .services-items .item-card h4 {
+    margin: 0 0 20px;
+}
+
+.services .services-items .item-card p {
+    color: #444;
+    font-weight: 300;
+    line-height: 1.6;
+}
